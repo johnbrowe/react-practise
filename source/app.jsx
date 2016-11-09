@@ -1,15 +1,12 @@
-import React from 'react';
-
+"use strict";
+import React from "react";
+import Router from "react-router";
+import Routes from "./routes.jsx";
 import {
     render
-}
+} from "react-dom";
 
-from 'react-dom';
-const App=React.createClass( {
-    render() {
-        return ( <section> <h1>My scaffold</h1> <p>Hello world</p> </section>);
-    }
-}
-
+render(
+    Routes,
+    document.getElementById('container')
 );
-render ( <App />, document.getElementById('container'));
